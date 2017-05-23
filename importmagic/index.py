@@ -30,7 +30,7 @@ DEFAULT_BLACKLIST_RE = re.compile(r'\btest[s]?|test[s]?\b', re.I)
 # vars() on it.
 BUILTIN_MODULES = sys.builtin_module_names + ('os',)
 
-_PYTHON_VERSION = 'python{}.{}'.format(sys.version_info.major, sys.version_info.minor)
+_PYTHON_VERSION = 'python{}.{}'.format(sys.version_info[0], sys.version_info[1])
 
 LOCATION_BOOSTS = {
     '3': 1.2,
